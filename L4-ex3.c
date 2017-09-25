@@ -10,7 +10,7 @@ CS4239 Lab 4 Exercise 3
 
 int main(int argc, char *argv[], char *envp[])
 {
-	int choice=1, x[2], *y, *p; 
+	int choice=1, x[2], *y, *p, *k; 
 	char a[8], b[100], *c, *d, *e; 
 
 	if (argc > 1) choice=atoi(argv[1]);
@@ -37,6 +37,8 @@ int main(int argc, char *argv[], char *envp[])
 		e = malloc(1 << 20); 
 		*c = (char) 333;
         break;
+	case 4: 
+		*k = 44; 
     }
     return 0;
 }

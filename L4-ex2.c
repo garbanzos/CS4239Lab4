@@ -30,8 +30,9 @@ int main(int argc, char *argv[], char *envp[]) {
         break;
     case 3:
         // global buffer overflow
-		global[33] = 300;
-        break;
+		p = malloc(sizeof(int)); 
+		free(p); 
+		free(p); 
     }
     return 0;
 }
