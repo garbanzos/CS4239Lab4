@@ -18,7 +18,7 @@ int main(int argc, char *argv[], char *envp[])
 
     switch (choice) {
     case 1:
-		// initialised pointer 
+		// uninitialised pointer 
         *p = 111;
 		break;
     case 2:

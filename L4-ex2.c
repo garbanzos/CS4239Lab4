@@ -19,7 +19,7 @@ int main(int argc, char *argv[], char *envp[]) {
 
     switch (choice) {
     case 1:
-        // use after free 
+        // use after free
 		p = malloc(sizeof(int));
 		free(p);
 		*p = 100;
@@ -29,10 +29,10 @@ int main(int argc, char *argv[], char *envp[]) {
 		buffer[22] = 200;
         break;
     case 3:
-        // global buffer overflow
-		p = malloc(sizeof(int)); 
-		free(p); 
-		free(p); 
+        // double free 
+		p = malloc(sizeof(int));
+		free(p);
+		free(p);
     }
     return 0;
 }
